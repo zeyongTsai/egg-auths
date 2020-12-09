@@ -1,0 +1,15 @@
+image: node:14.14.0
+
+pages: # 必须定义一个名为 pages 的 job
+  stage: deploy
+  script:
+    - npm install jsdoc docdash
+    - npm run doc
+    - mv docs public # GitLab Pages 的钩子设置在 public 文件夹
+  artifacts:
+    paths:
+      - public # artifact path 一定要在 /public , 这样 GitLab Pages 才能获取
+  only:
+    - master
+  tags:
+    - docker-runner
