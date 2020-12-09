@@ -1,6 +1,6 @@
 {
   "name": "egg-auths",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "authentication and authorization egg plugin",
   "eggPlugin": {
     "name": "auths"
@@ -40,7 +40,8 @@
     "app.js",
     "agent.js",
     "config",
-    "app"
+    "app",
+    "lib"
   ],
   "ci": {
     "version": "8, 10"
