@@ -48,12 +48,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/eggjs/egg-auths.git"
+    "url": "git+https://github.com/zeyongTsai/egg-auths.git"
   },
   "bugs": {
-    "url": "https://github.com/eggjs/egg/issues"
+    "url": "https://github.com/zeyongTsai/egg-auths/issues"
   },
-  "homepage": "https://github.com/eggjs/egg-auths#readme",
+  "homepage": "https://github.com/zeyongTsai/egg-auths",
   "author": "cai_zeyong",
   "license": "MIT"
 }
