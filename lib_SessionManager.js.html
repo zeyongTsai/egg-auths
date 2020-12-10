@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>lib/SessionManager.js - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/zeyongTsai/egg-auths" target="_blank" class="menu-item" id="github_link" >github</a></h2><h2><a href="http://git.linker.cc/linkerfe/egg-auth" target="_blank" class="menu-item" id="gitlab_link" >gitlab</a></h2><h3>Tutorials</h3><ul><li><a href="tutorial-Concepts.html">Concepts</a></li><li><a href="tutorial-Configuration.html">Configuration</a></li><li><a href="tutorial-CustomAuthService.html">Custom Auth Service</a></li><li><a href="tutorial-CustomAuthenticationToken.html">Custom AuthenticationToken</a></li><li><a href="tutorial-CustomRealm.html">Custom Realm</a></li><li><a href="tutorial-CustomSessionManager.html">Custom SessionManager</a></li><li><a href="tutorial-CustomStorage.html">Custom Storage</a></li><li><a href="tutorial-RBAC.html">Custom RBAC Middleware</a></li></ul><h3>Classes</h3><ul><li><a href="AuthenticationException.html">AuthenticationException</a></li><li><a href="AuthenticationToken.html">AuthenticationToken</a><ul class='methods'><li data-type='method'><a href="AuthenticationToken.html#getCredentials">getCredentials</a></li><li data-type='method'><a href="AuthenticationToken.html#getPrincipals">getPrincipals</a></li><li data-type='method'><a href="AuthenticationToken.html#getUUID">getUUID</a></li></ul></li><li><a href="NotImplementException.html">NotImplementException</a></li><li><a href="PermissionService.html">PermissionService</a><ul class='methods'><li data-type='method'><a href="PermissionService.html#getPermissionsByRoleId">getPermissionsByRoleId</a></li></ul></li><li><a href="RBACAuth.html">RBACAuth</a><ul class='methods'><li data-type='method'><a href="RBACAuth.html#authenticationFailed">authenticationFailed</a></li><li data-type='method'><a href="RBACAuth.html#authorizationFailed">authorizationFailed</a></li><li data-type='method'><a href="RBACAuth.html#checkLogin">checkLogin</a></li><li data-type='method'><a href="RBACAuth.html#checkPermissions">checkPermissions</a></li><li data-type='method'><a href="RBACAuth.html#checkRoles">checkRoles</a></li></ul></li><li><a href="Realm.html">Realm</a><ul class='methods'><li data-type='method'><a href="Realm.html#.supports">supports</a></li><li data-type='method'><a href="Realm.html#authenticate">authenticate</a></li><li data-type='method'><a href="Realm.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="Realm.html#getRoles">getRoles</a></li></ul></li><li><a href="RealmInvalidException.html">RealmInvalidException</a></li><li><a href="RoleService.html">RoleService</a><ul class='methods'><li data-type='method'><a href="RoleService.html#findRolesByUserID">findRolesByUserID</a></li></ul></li><li><a href="SessionManager.html">SessionManager</a><ul class='methods'><li data-type='method'><a href="SessionManager.html#destroy">destroy</a></li><li data-type='method'><a href="SessionManager.html#getSession">getSession</a></li><li data-type='method'><a href="SessionManager.html#setSession">setSession</a></li></ul></li><li><a href="SessionManagerInvalidException.html">SessionManagerInvalidException</a></li><li><a href="Storage.html">Storage</a><ul class='methods'><li data-type='method'><a href="Storage.html#deleteKey">deleteKey</a></li><li data-type='method'><a href="Storage.html#getKey">getKey</a></li><li data-type='method'><a href="Storage.html#setKey">setKey</a></li></ul></li><li><a href="StorageInvalidException.html">StorageInvalidException</a></li><li><a href="Subject.html">Subject</a><ul class='methods'><li data-type='method'><a href="Subject.html#getRealm">getRealm</a></li><li data-type='method'><a href="Subject.html#getToken">getToken</a></li><li data-type='method'><a href="Subject.html#hasPermission">hasPermission</a></li><li data-type='method'><a href="Subject.html#hasPermissions">hasPermissions</a></li><li data-type='method'><a href="Subject.html#hasRole">hasRole</a></li><li data-type='method'><a href="Subject.html#hasRoles">hasRoles</a></li><li data-type='method'><a href="Subject.html#init">init</a></li><li data-type='method'><a href="Subject.html#login">login</a></li><li data-type='method'><a href="Subject.html#logout">logout</a></li><li data-type='method'><a href="Subject.html#setPermissions">setPermissions</a></li><li data-type='method'><a href="Subject.html#setRealm">setRealm</a></li><li data-type='method'><a href="Subject.html#setRoles">setRoles</a></li><li data-type='method'><a href="Subject.html#setToken">setToken</a></li></ul></li><li><a href="TokenInvalidException.html">TokenInvalidException</a></li><li><a href="UnsupportedTokenException.html">UnsupportedTokenException</a></li><li><a href="UserService.html">UserService</a><ul class='methods'><li data-type='method'><a href="UserService.html#findUserByAccountAndPassword">findUserByAccountAndPassword</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AuthException.html">AuthException</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">lib/SessionManager.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * @class
+ * @classdesc 会话管理器，主要负责会话 id 的存取，默认在 session 中放置 token 的 uuid，也从 session 中取回
+ */
+class SessionManager {
+  /**
+   * @constructor
+   * @param {object} ctx  egg's ctx
+   */
+  constructor (ctx) {
+    /**
+     * egg 的 ctx 对象，通过它来调用相关的其他资源
+     * @public
+     */
+    this.ctx = ctx
+  }
+  /**
+   * 获取会话 id
+   * @returns {undefined|string|number}
+   */
+  async getSession () {
+    return this.ctx.session.uuid
+  }
+  /**
+   * 设置会话 id
+   * @param {number|string} value 会话 id
+   */
+  async setSession (value) {
+    this.ctx.session.uuid = value
+  }
+  /**
+   * 销毁会话
+   */
+  async destroy () {
+    this.ctx.session.uuid = null
+  }
+}
+
+module.exports = SessionManager</code></pre>
+        </article>
+    </section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Dec 10 2020 03:47:03 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

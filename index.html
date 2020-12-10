@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Home - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/zeyongTsai/egg-auths" target="_blank" class="menu-item" id="github_link" >github</a></h2><h2><a href="http://git.linker.cc/linkerfe/egg-auth" target="_blank" class="menu-item" id="gitlab_link" >gitlab</a></h2><h3>Tutorials</h3><ul><li><a href="tutorial-Concepts.html">Concepts</a></li><li><a href="tutorial-Configuration.html">Configuration</a></li><li><a href="tutorial-CustomAuthService.html">Custom Auth Service</a></li><li><a href="tutorial-CustomAuthenticationToken.html">Custom AuthenticationToken</a></li><li><a href="tutorial-CustomRealm.html">Custom Realm</a></li><li><a href="tutorial-CustomSessionManager.html">Custom SessionManager</a></li><li><a href="tutorial-CustomStorage.html">Custom Storage</a></li><li><a href="tutorial-RBAC.html">Custom RBAC Middleware</a></li></ul><h3>Classes</h3><ul><li><a href="AuthenticationException.html">AuthenticationException</a></li><li><a href="AuthenticationToken.html">AuthenticationToken</a><ul class='methods'><li data-type='method'><a href="AuthenticationToken.html#getCredentials">getCredentials</a></li><li data-type='method'><a href="AuthenticationToken.html#getPrincipals">getPrincipals</a></li><li data-type='method'><a href="AuthenticationToken.html#getUUID">getUUID</a></li></ul></li><li><a href="NotImplementException.html">NotImplementException</a></li><li><a href="PermissionService.html">PermissionService</a><ul class='methods'><li data-type='method'><a href="PermissionService.html#getPermissionsByRoleId">getPermissionsByRoleId</a></li></ul></li><li><a href="RBACAuth.html">RBACAuth</a><ul class='methods'><li data-type='method'><a href="RBACAuth.html#authenticationFailed">authenticationFailed</a></li><li data-type='method'><a href="RBACAuth.html#authorizationFailed">authorizationFailed</a></li><li data-type='method'><a href="RBACAuth.html#checkLogin">checkLogin</a></li><li data-type='method'><a href="RBACAuth.html#checkPermissions">checkPermissions</a></li><li data-type='method'><a href="RBACAuth.html#checkRoles">checkRoles</a></li></ul></li><li><a href="Realm.html">Realm</a><ul class='methods'><li data-type='method'><a href="Realm.html#.supports">supports</a></li><li data-type='method'><a href="Realm.html#authenticate">authenticate</a></li><li data-type='method'><a href="Realm.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="Realm.html#getRoles">getRoles</a></li></ul></li><li><a href="RealmInvalidException.html">RealmInvalidException</a></li><li><a href="RoleService.html">RoleService</a><ul class='methods'><li data-type='method'><a href="RoleService.html#findRolesByUserID">findRolesByUserID</a></li></ul></li><li><a href="SessionManager.html">SessionManager</a><ul class='methods'><li data-type='method'><a href="SessionManager.html#destroy">destroy</a></li><li data-type='method'><a href="SessionManager.html#getSession">getSession</a></li><li data-type='method'><a href="SessionManager.html#setSession">setSession</a></li></ul></li><li><a href="SessionManagerInvalidException.html">SessionManagerInvalidException</a></li><li><a href="Storage.html">Storage</a><ul class='methods'><li data-type='method'><a href="Storage.html#deleteKey">deleteKey</a></li><li data-type='method'><a href="Storage.html#getKey">getKey</a></li><li data-type='method'><a href="Storage.html#setKey">setKey</a></li></ul></li><li><a href="StorageInvalidException.html">StorageInvalidException</a></li><li><a href="Subject.html">Subject</a><ul class='methods'><li data-type='method'><a href="Subject.html#getRealm">getRealm</a></li><li data-type='method'><a href="Subject.html#getToken">getToken</a></li><li data-type='method'><a href="Subject.html#hasPermission">hasPermission</a></li><li data-type='method'><a href="Subject.html#hasPermissions">hasPermissions</a></li><li data-type='method'><a href="Subject.html#hasRole">hasRole</a></li><li data-type='method'><a href="Subject.html#hasRoles">hasRoles</a></li><li data-type='method'><a href="Subject.html#init">init</a></li><li data-type='method'><a href="Subject.html#login">login</a></li><li data-type='method'><a href="Subject.html#logout">logout</a></li><li data-type='method'><a href="Subject.html#setPermissions">setPermissions</a></li><li data-type='method'><a href="Subject.html#setRealm">setRealm</a></li><li data-type='method'><a href="Subject.html#setRoles">setRoles</a></li><li data-type='method'><a href="Subject.html#setToken">setToken</a></li></ul></li><li><a href="TokenInvalidException.html">TokenInvalidException</a></li><li><a href="UnsupportedTokenException.html">UnsupportedTokenException</a></li><li><a href="UserService.html">UserService</a><ul class='methods'><li data-type='method'><a href="UserService.html#findUserByAccountAndPassword">findUserByAccountAndPassword</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AuthException.html">AuthException</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+
+    
+
+
+
+    
+
+
+    <section class="package">
+        <h3> </h3>		
+    </section>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+    <section class="readme usertext">
+        <article><h1>egg-auths</h1>
+<p><a href="https://npmjs.org/package/egg-auths"><img src="https://img.shields.io/npm/v/egg-auths.svg?style=flat-square" alt="NPM version"></a>
+<a href="https://travis-ci.org/eggjs/egg-auths"><img src="https://img.shields.io/travis/eggjs/egg-auths.svg?style=flat-square" alt="build status"></a>
+<a href="https://codecov.io/github/eggjs/egg-auths?branch=master"><img src="https://img.shields.io/codecov/c/github/eggjs/egg-auths.svg?style=flat-square" alt="Test coverage"></a>
+<a href="https://david-dm.org/eggjs/egg-auths"><img src="https://img.shields.io/david/eggjs/egg-auths.svg?style=flat-square" alt="David deps"></a>
+<a href="https://snyk.io/test/npm/egg-auths"><img src="https://snyk.io/test/npm/egg-auths/badge.svg?style=flat-square" alt="Known Vulnerabilities"></a>
+<a href="https://npmjs.org/package/egg-auths"><img src="https://img.shields.io/npm/dm/egg-auths.svg?style=flat-square" alt="npm download"></a></p>
+<p>Auths 是 eggjs 的一个插件，主要用于完成用户认证（Authentication）和授权（Authorization），相关的 API 和模块主要参考 <a href="https://shiro.apache.org/">Apache Shiro</a> 来设计，支持粗粒度的基于角色来控制资源的访问，也支持细粒度的基于资源的权限访问控制。目前的设计上，角色和权限的数据源（Realm）为数据库，使用 <a href="https://github.com/eggjs/egg-sequelize">egg-sequelize</a> 作为 ORM，用户身份和凭证信息持久化到 egg 的 <code>session</code>。</p>
+<h2>依赖说明</h2>
+<h3>依赖的 egg 版本</h3>
+<table>
+<thead>
+<tr>
+<th>egg-auths 版本</th>
+<th>egg 2.x</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1.x</td>
+<td>😁</td>
+</tr>
+</tbody>
+</table>
+<h3>依赖的插件</h3>
+<ol>
+<li><em><strong>egg-sequelize</strong></em></li>
+</ol>
+<h2>Install</h2>
+<pre class="prettyprint source lang-shell"><code># depend egg-sequelize
+npm i egg-auths egg-sequelize
+</code></pre>
+<h2>Configuration</h2>
+<ol>
+<li>配置 egg 的 <code>plugin.js</code></li>
+</ol>
+<pre class="prettyprint source lang-js"><code>// application/config/plugin.js
+
+sequelize: {
+  enable: true,
+  package: 'egg-sequelize',
+},
+auths: {
+  enable: true,
+  package: 'egg-auths'
+}
+</code></pre>
+<ol start="2">
+<li>配置 egg 的 <code>config.default.js</code></li>
+</ol>
+<pre class="prettyprint source lang-js"><code>// application/config/config.default.js
+
+config.sequelize = {
+  dialect: 'mysql',
+  host: '127.0.0.1',
+  port: 3306,
+  database: 'test',
+  username: 'root',
+  password: '********',
+  // 插件带有数据库的 ORM model 定义
+  // 真实环境请将该目录拷贝到 application/app/model 下，并修改 baseDir 的值
+  // 参考 egg-sequelize
+  baseDir: '../node_modules/egg-auths/app/model'
+}
+
+config.auths = {
+  // 如果没有自定义 auths 中的某些模块的需求，则可以仅为空对象
+}
+</code></pre>
+<ol start="3">
+<li>同步 Model 到 DB</li>
+</ol>
+<pre class="prettyprint source lang-js"><code>// application/app.js
+
+module.exports = app => {
+  if (app.config.env === 'local' || app.config.env === 'unittest') {
+    app.beforeStart(async () => {
+      await app.model.sync();
+    });
+  }
+};
+</code></pre>
+<p>参考 <a href="https://github.com/eggjs/egg-sequelize">egg-sequelize</a>，在生产环境下应该使用 <a href="https://github.com/sequelize/cli">sequelize-cli</a>.</p>
+<h2>Usage</h2>
+<ol>
+<li>在路由中使用中间件</li>
+</ol>
+<pre class="prettyprint source lang-js"><code>// application/app/router.js
+
+// 引入依赖
+const RBACAuth = require('egg-auths/lib/index')
+
+module.exports = app => {
+  const { router, controller } = app;
+  // 初始化一个实例
+  const rbac = new RBACAuth({
+    // 这里可以定义认证或者鉴权失败的相关 HTTP Response，详细配置查看 API 文档的 RBACAuth
+  })
+  // 在特定路由中使用
+  router.get('/admin', rbac.checkRoles(['admin']), controller.admin.index)
+  router.get('/orders', rbac.checkRoles(['admin','ceo']), controller.admin.order)
+  router.get('/users', rbac.checkPermissions(['admin:user']), controller.admin.order)
+  router.get('/profile', rbac.checkLogin(), controller.admin.order)
+}
+</code></pre>
+<ol start="2">
+<li>在程序中（<code>controller</code>,<code>service</code>）使用 API 验证</li>
+</ol>
+<pre class="prettyprint source lang-js"><code>// application/app/controller/admin.js
+
+const Controller = require('egg').Controller;
+
+class AdminController extends Controller {
+  async index () {
+    let { ctx } = this
+    let subject = await ctx.getSubject()
+    subject.hasRoles(['admin','ceo'])
+    subject.hasPermissions(['admin:user'])
+    subject.isLogined // true or false
+  }
+}
+
+</code></pre>
+<h2>License</h2>
+<p><a href="LICENSE">MIT</a></p></article>
+    </section>
+
+
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Dec 10 2020 03:47:03 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

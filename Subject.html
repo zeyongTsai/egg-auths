@@ -1,0 +1,2289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Subject - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/zeyongTsai/egg-auths" target="_blank" class="menu-item" id="github_link" >github</a></h2><h2><a href="http://git.linker.cc/linkerfe/egg-auth" target="_blank" class="menu-item" id="gitlab_link" >gitlab</a></h2><h3>Tutorials</h3><ul><li><a href="tutorial-Concepts.html">Concepts</a></li><li><a href="tutorial-Configuration.html">Configuration</a></li><li><a href="tutorial-CustomAuthService.html">Custom Auth Service</a></li><li><a href="tutorial-CustomAuthenticationToken.html">Custom AuthenticationToken</a></li><li><a href="tutorial-CustomRealm.html">Custom Realm</a></li><li><a href="tutorial-CustomSessionManager.html">Custom SessionManager</a></li><li><a href="tutorial-CustomStorage.html">Custom Storage</a></li><li><a href="tutorial-RBAC.html">Custom RBAC Middleware</a></li></ul><h3>Classes</h3><ul><li><a href="AuthenticationException.html">AuthenticationException</a></li><li><a href="AuthenticationToken.html">AuthenticationToken</a><ul class='methods'><li data-type='method'><a href="AuthenticationToken.html#getCredentials">getCredentials</a></li><li data-type='method'><a href="AuthenticationToken.html#getPrincipals">getPrincipals</a></li><li data-type='method'><a href="AuthenticationToken.html#getUUID">getUUID</a></li></ul></li><li><a href="NotImplementException.html">NotImplementException</a></li><li><a href="PermissionService.html">PermissionService</a><ul class='methods'><li data-type='method'><a href="PermissionService.html#getPermissionsByRoleId">getPermissionsByRoleId</a></li></ul></li><li><a href="RBACAuth.html">RBACAuth</a><ul class='methods'><li data-type='method'><a href="RBACAuth.html#authenticationFailed">authenticationFailed</a></li><li data-type='method'><a href="RBACAuth.html#authorizationFailed">authorizationFailed</a></li><li data-type='method'><a href="RBACAuth.html#checkLogin">checkLogin</a></li><li data-type='method'><a href="RBACAuth.html#checkPermissions">checkPermissions</a></li><li data-type='method'><a href="RBACAuth.html#checkRoles">checkRoles</a></li></ul></li><li><a href="Realm.html">Realm</a><ul class='methods'><li data-type='method'><a href="Realm.html#.supports">supports</a></li><li data-type='method'><a href="Realm.html#authenticate">authenticate</a></li><li data-type='method'><a href="Realm.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="Realm.html#getRoles">getRoles</a></li></ul></li><li><a href="RealmInvalidException.html">RealmInvalidException</a></li><li><a href="RoleService.html">RoleService</a><ul class='methods'><li data-type='method'><a href="RoleService.html#findRolesByUserID">findRolesByUserID</a></li></ul></li><li><a href="SessionManager.html">SessionManager</a><ul class='methods'><li data-type='method'><a href="SessionManager.html#destroy">destroy</a></li><li data-type='method'><a href="SessionManager.html#getSession">getSession</a></li><li data-type='method'><a href="SessionManager.html#setSession">setSession</a></li></ul></li><li><a href="SessionManagerInvalidException.html">SessionManagerInvalidException</a></li><li><a href="Storage.html">Storage</a><ul class='methods'><li data-type='method'><a href="Storage.html#deleteKey">deleteKey</a></li><li data-type='method'><a href="Storage.html#getKey">getKey</a></li><li data-type='method'><a href="Storage.html#setKey">setKey</a></li></ul></li><li><a href="StorageInvalidException.html">StorageInvalidException</a></li><li><a href="Subject.html">Subject</a><ul class='methods'><li data-type='method'><a href="Subject.html#getRealm">getRealm</a></li><li data-type='method'><a href="Subject.html#getToken">getToken</a></li><li data-type='method'><a href="Subject.html#hasPermission">hasPermission</a></li><li data-type='method'><a href="Subject.html#hasPermissions">hasPermissions</a></li><li data-type='method'><a href="Subject.html#hasRole">hasRole</a></li><li data-type='method'><a href="Subject.html#hasRoles">hasRoles</a></li><li data-type='method'><a href="Subject.html#init">init</a></li><li data-type='method'><a href="Subject.html#login">login</a></li><li data-type='method'><a href="Subject.html#logout">logout</a></li><li data-type='method'><a href="Subject.html#setPermissions">setPermissions</a></li><li data-type='method'><a href="Subject.html#setRealm">setRealm</a></li><li data-type='method'><a href="Subject.html#setRoles">setRoles</a></li><li data-type='method'><a href="Subject.html#setToken">setToken</a></li></ul></li><li><a href="TokenInvalidException.html">TokenInvalidException</a></li><li><a href="UnsupportedTokenException.html">UnsupportedTokenException</a></li><li><a href="UserService.html">UserService</a><ul class='methods'><li data-type='method'><a href="UserService.html#findUserByAccountAndPassword">findUserByAccountAndPassword</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AuthException.html">AuthException</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Subject</h1>
+    
+
+    
+
+
+
+
+<section>
+
+<header>
+    
+        <h2>
+        Subject
+        </h2>
+        
+            <div class="class-description usertext">主体类，实例指向当前会话的具体用户，通过它来提供认证和授权信息的存取</div>
+        
+    
+</header>
+
+<article>
+    
+        <div class="container-overview">
+        
+            
+
+    
+    <h2>Constructor</h2>
+    
+
+    <h4 class="name" id="Subject"><span class="type-signature"></span>new Subject<span class="signature">(ctx, 会话管理器的实例)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ctx</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">egg's ctx</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>会话管理器的实例</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="SessionManager.html">SessionManager</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+        </div>
+    
+
+    
+
+    
+
+    
+    
+    
+
+     
+
+    
+
+    
+        <h3 class="subsection-title">Members</h3>
+
+        
+            
+<h4 class="name" id="ctx"><span class="type-signature"></span>ctx<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line20">line 20</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    egg 的 ctx 对象，通过它来与 session 或其他 cache 打交道，实现数据的存取
+</div>
+
+
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="isLogined"><span class="type-signature"></span>isLogined<span class="type-signature"> :boolean</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    是否登录
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">boolean</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="permissions"><span class="type-signature"></span>permissions<span class="type-signature"> :object</span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line43">line 43</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    主体所拥有的权限
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">object</span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="roleNames"><span class="type-signature"></span>roleNames<span class="type-signature"> :array.&lt;string></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line37">line 37</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    主体所属的角色名称
+</div>
+
+
+
+    <h5>Type:</h5>
+    <ul>
+        <li>
+            
+<span class="param-type">array.&lt;string></span>
+
+
+        </li>
+    </ul>
+
+
+
+
+
+
+        
+            
+<h4 class="name" id="sessionManager"><span class="type-signature"></span>sessionManager<span class="type-signature"></span></h4>
+
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line25">line 25</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    会话管理器对象，内部通过它来找到会话 id，进而通过 id 去 storage 中找到 token
+</div>
+
+
+
+
+
+
+
+
+        
+    
+
+    
+        <h3 class="subsection-title">Methods</h3>
+
+        
+            
+
+    
+
+    <h4 class="name" id="getRealm"><span class="type-signature">(async) </span>getRealm<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="Realm.html">Realm</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line49">line 49</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    获取数据源实例
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="Realm.html">Realm</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getToken"><span class="type-signature">(async) </span>getToken<span class="signature">()</span><span class="type-signature"> &rarr; {<a href="AuthenticationToken.html">AuthenticationToken</a>}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line180">line 180</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    获取认证 token，默认从 session 中拿到并构造一个 AuthenticationToken 的实例返回
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    认证 token 的实例，或者 null
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type"><a href="AuthenticationToken.html">AuthenticationToken</a></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="hasPermission"><span class="type-signature"></span>hasPermission<span class="signature">(permission)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line140">line 140</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    是否拥有指定权限
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>permission</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">权限名称</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="hasPermissions"><span class="type-signature"></span>hasPermissions<span class="signature">(permissions)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line147">line 147</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    是否拥有指定权限集
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>permissions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">权限名称集合</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="hasRole"><span class="type-signature"></span>hasRole<span class="signature">(roleName)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line156">line 156</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    主体是否拥有指定角色
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>roleName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">角色名称</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="hasRoles"><span class="type-signature"></span>hasRoles<span class="signature">(roleNames)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line163">line 163</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    主体是否拥有指定多个角色
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>roleNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">角色名称集合</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="init"><span class="type-signature">(async) </span>init<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line70">line 70</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    初始化方法，在构造完成后会调用，函数内拿到会话对应的 token 异步完成角色和权限数据的获取与设置
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="login"><span class="type-signature">(async) </span>login<span class="signature">(token)</span><span class="type-signature"> &rarr; {object}</span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line92">line 92</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-see">See:</dt>
+    <dd class="tag-see">
+        <ul>
+            <li><a href="Realm.html#authenticate">Realm#authenticate</a> 内部调用可能抛出异常</li>
+        </ul>
+    </dd>
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    主体登录
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AuthenticationToken.html">AuthenticationToken</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">认证 token 的实例</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+<ul>
+        <li>
+
+    <div class="param-desc usertext">
+    
+        
+<span class="param-type"><a href="TokenInvalidException.html">TokenInvalidException</a></span>
+
+
+    
+    </div>
+
+</li>
+    
+        <li>
+
+    <div class="param-desc usertext">
+    
+        
+<span class="param-type"><a href="UnsupportedTokenException.html">UnsupportedTokenException</a></span>
+
+
+    
+    </div>
+
+</li>
+    </ul>
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    认证成功后拿到的用户信息
+</div>
+
+
+
+<dl class="param-type">
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="logout"><span class="type-signature">(async) </span>logout<span class="signature">()</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line113">line 113</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    登出
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setPermissions"><span class="type-signature"></span>setPermissions<span class="signature">(permissions)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line129">line 129</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    设置主体的权限列表
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>permissions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">权限数组</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setRealm"><span class="type-signature"></span>setRealm<span class="signature">(realm)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line64">line 64</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    设置数据源实例
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>realm</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="Realm.html">Realm</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">数据源</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setRoles"><span class="type-signature"></span>setRoles<span class="signature">(roleNames)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line122">line 122</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    设置主体的角色
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>roleNames</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">array.&lt;string></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">角色名称</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="setToken"><span class="type-signature">(async) </span>setToken<span class="signature">(token)</span><span class="type-signature"></span></h4>
+
+    
+
+
+
+
+<dl class="details">
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="lib_Subject.js.html">lib/Subject.js</a>, <a href="lib_Subject.js.html#line172">line 172</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+<div class="description usertext">
+    设置认证token，内部完成 token 的存储，默认存储在 session 中
+</div>
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>token</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="AuthenticationToken.html">AuthenticationToken</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last"></td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    
+
+    
+
+    
+</article>
+
+</section>
+
+
+
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Dec 10 2020 03:47:03 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>

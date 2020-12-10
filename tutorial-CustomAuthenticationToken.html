@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="utf-8">
+    <title>Tutorial: Custom AuthenticationToken - Documentation</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc.css">
+    <script src="scripts/nav.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav >
+    
+    <input type="text" id="nav-search" placeholder="Search" />
+    
+    <h2><a href="index.html">Home</a></h2><h2><a href="https://github.com/zeyongTsai/egg-auths" target="_blank" class="menu-item" id="github_link" >github</a></h2><h2><a href="http://git.linker.cc/linkerfe/egg-auth" target="_blank" class="menu-item" id="gitlab_link" >gitlab</a></h2><h3>Tutorials</h3><ul><li><a href="tutorial-Concepts.html">Concepts</a></li><li><a href="tutorial-Configuration.html">Configuration</a></li><li><a href="tutorial-CustomAuthService.html">Custom Auth Service</a></li><li><a href="tutorial-CustomAuthenticationToken.html">Custom AuthenticationToken</a></li><li><a href="tutorial-CustomRealm.html">Custom Realm</a></li><li><a href="tutorial-CustomSessionManager.html">Custom SessionManager</a></li><li><a href="tutorial-CustomStorage.html">Custom Storage</a></li><li><a href="tutorial-RBAC.html">Custom RBAC Middleware</a></li></ul><h3>Classes</h3><ul><li><a href="AuthenticationException.html">AuthenticationException</a></li><li><a href="AuthenticationToken.html">AuthenticationToken</a><ul class='methods'><li data-type='method'><a href="AuthenticationToken.html#getCredentials">getCredentials</a></li><li data-type='method'><a href="AuthenticationToken.html#getPrincipals">getPrincipals</a></li><li data-type='method'><a href="AuthenticationToken.html#getUUID">getUUID</a></li></ul></li><li><a href="NotImplementException.html">NotImplementException</a></li><li><a href="PermissionService.html">PermissionService</a><ul class='methods'><li data-type='method'><a href="PermissionService.html#getPermissionsByRoleId">getPermissionsByRoleId</a></li></ul></li><li><a href="RBACAuth.html">RBACAuth</a><ul class='methods'><li data-type='method'><a href="RBACAuth.html#authenticationFailed">authenticationFailed</a></li><li data-type='method'><a href="RBACAuth.html#authorizationFailed">authorizationFailed</a></li><li data-type='method'><a href="RBACAuth.html#checkLogin">checkLogin</a></li><li data-type='method'><a href="RBACAuth.html#checkPermissions">checkPermissions</a></li><li data-type='method'><a href="RBACAuth.html#checkRoles">checkRoles</a></li></ul></li><li><a href="Realm.html">Realm</a><ul class='methods'><li data-type='method'><a href="Realm.html#.supports">supports</a></li><li data-type='method'><a href="Realm.html#authenticate">authenticate</a></li><li data-type='method'><a href="Realm.html#getPermissions">getPermissions</a></li><li data-type='method'><a href="Realm.html#getRoles">getRoles</a></li></ul></li><li><a href="RealmInvalidException.html">RealmInvalidException</a></li><li><a href="RoleService.html">RoleService</a><ul class='methods'><li data-type='method'><a href="RoleService.html#findRolesByUserID">findRolesByUserID</a></li></ul></li><li><a href="SessionManager.html">SessionManager</a><ul class='methods'><li data-type='method'><a href="SessionManager.html#destroy">destroy</a></li><li data-type='method'><a href="SessionManager.html#getSession">getSession</a></li><li data-type='method'><a href="SessionManager.html#setSession">setSession</a></li></ul></li><li><a href="SessionManagerInvalidException.html">SessionManagerInvalidException</a></li><li><a href="Storage.html">Storage</a><ul class='methods'><li data-type='method'><a href="Storage.html#deleteKey">deleteKey</a></li><li data-type='method'><a href="Storage.html#getKey">getKey</a></li><li data-type='method'><a href="Storage.html#setKey">setKey</a></li></ul></li><li><a href="StorageInvalidException.html">StorageInvalidException</a></li><li><a href="Subject.html">Subject</a><ul class='methods'><li data-type='method'><a href="Subject.html#getRealm">getRealm</a></li><li data-type='method'><a href="Subject.html#getToken">getToken</a></li><li data-type='method'><a href="Subject.html#hasPermission">hasPermission</a></li><li data-type='method'><a href="Subject.html#hasPermissions">hasPermissions</a></li><li data-type='method'><a href="Subject.html#hasRole">hasRole</a></li><li data-type='method'><a href="Subject.html#hasRoles">hasRoles</a></li><li data-type='method'><a href="Subject.html#init">init</a></li><li data-type='method'><a href="Subject.html#login">login</a></li><li data-type='method'><a href="Subject.html#logout">logout</a></li><li data-type='method'><a href="Subject.html#setPermissions">setPermissions</a></li><li data-type='method'><a href="Subject.html#setRealm">setRealm</a></li><li data-type='method'><a href="Subject.html#setRoles">setRoles</a></li><li data-type='method'><a href="Subject.html#setToken">setToken</a></li></ul></li><li><a href="TokenInvalidException.html">TokenInvalidException</a></li><li><a href="UnsupportedTokenException.html">UnsupportedTokenException</a></li><li><a href="UserService.html">UserService</a><ul class='methods'><li data-type='method'><a href="UserService.html#findUserByAccountAndPassword">findUserByAccountAndPassword</a></li></ul></li></ul><h3>Modules</h3><ul><li><a href="module-AuthException.html">AuthException</a></li></ul><h3><a href="global.html">Global</a></h3>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">Tutorial: Custom AuthenticationToken</h1>
+    
+
+    <section>
+
+<header>
+    
+
+    <h2>Custom AuthenticationToken</h2>
+</header>
+
+<article>
+    <h2>自定义 AuthenticationToken</h2>
+<p>不同的场景下，我们对认证需要的身份和凭证信息不同，比如在单点登录（SSO）的一种广泛使用的方案 CAS 中，我们最需要的 token 应该包含 CAS 的 ST（Service Ticket），即服务票据。因此我们应该这样定义：</p>
+<pre class="prettyprint source lang-js"><code>// path/to/CASToken.js
+
+const AuthenticationToken = require('egg-auths/lib/AuthenticationToken')
+
+class CASToken extends AuthenticationToken {
+  constructor (options) {
+    super(options)
+    // ST 在登录的时候是必传的
+    this.ST = options.ST
+    // 用户信息在验证通过后才有
+    this.userInfo = options.userInfo || null
+  }
+  getST () {
+    return this.ST
+  }
+  // 后续验证通过后设置用户信息
+  setUserInfo (user) {
+    this.userInfo = user
+  }
+}
+</code></pre>
+<p>接下来我们需要实现一个能消费这种 Token 类型的 Realm</p>
+<pre class="prettyprint source lang-js"><code>// path/to/CASRealm
+
+const CASToken = require('path/to/CASToken')
+const Realm = require('egg-auths/lib/Realm')
+
+class CASRealm extends Realm {
+  constructor (...args) {
+    super(...args)
+  }
+  // 静态方法 supports 用来判断是否支持某种 Token 类型
+  static supports (token) {
+    return token instanceof CASToken
+  }
+  async authenticate (token) {
+    // 调用cas client 的验证 ST
+    let user = await this.ctx.service.cas.validateSTAndGetUser(token.getST())
+    // 设置用户信息
+    token.setUserInfo(user)
+    // user 必须包含一个 id 属性是唯一的，用于持久化信息并根据 id 查找
+    return user
+  }
+  async getRoles (token) {
+    // return roles
+  }
+  async getPermissions (roleIds) {
+    // return permissions
+  }
+}
+</code></pre>
+<p>然后在配置文件中加入这两个类：</p>
+<pre class="prettyprint source lang-js"><code>// application/config/config.default.js
+
+const CASToken = require('path/to/CASToken')
+const CASRealm = require('path/to/CASRealm')
+
+config.auths = {
+  realms: [CASRealm],
+  tokens: [CASToken],
+}
+ 
+</code></pre>
+<h2>获取 token 信息</h2>
+<p>你可以通过 <code>await subject.getToken()</code> 拿到 subject 对应 token 的实例。因为 token 被序列化到外部存储媒介（redis、session等），可能需要远程访问，因此这是一个 <code>async</code> 方法。</p>
+</article>
+
+</section>
+
+    
+    
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.6</a> on Thu Dec 10 2020 03:47:03 GMT+0000 (Coordinated Universal Time) using the <a href="https://github.com/clenemt/docdash">docdash</a> theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/polyfill.js"></script>
+<script src="scripts/linenumber.js"></script>
+
+<script src="scripts/search.js" defer></script>
+
+
+
+</body>
+</html>
